@@ -5,10 +5,10 @@ export default class Header extends Component {
         return (
             <div>
 
-                <hi>
+                <h1>
                     "Are you horny, baby?"
-                    <img src= "powers.png" width= "100" height= "100"/>
-                </hi>
+                    <img className= "header-img" src= "powers.png" width= "100" height= "100"/>
+                </h1>
 
                 
             </div>
