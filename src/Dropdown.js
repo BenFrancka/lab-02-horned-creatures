@@ -7,14 +7,14 @@ export default class Dropdown extends Component {
                 
                 <select onChange={this.props.handleSelection}>
 
-                    <option value="">All</option>
+                    <option value="">-- select --</option>
 
                     {this.props.options.map(optionString =>
                         <option value={optionString}>
                             {optionString}
                             </option>
                         )}
-                        
+
                 </select>
             </label>
         )
