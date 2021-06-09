@@ -19,18 +19,21 @@ export default class App extends Component {
   }
 
   handleHornSelection = (e) => {
-    this.setState({filterHorns: e.target.value})
+    this.setState({ filterHorns: e.target.value })
   }
 
   
   render () {
-    //
+
     let filteredCreatures = creatures;
   
     
     if (this.state.filterKeyword) {
       filteredCreatures = creatures.filter(creature => creature.keyword === this.state.filterKeyword)
-      
+    }
+
+    if (this.state.filterHorns) {
+         filteredCreatures = creatures.filter(creature => creature.horns === +this.state.filterHorns)
     }
     
     //makes array of keywords for dropdown props
@@ -53,12 +56,12 @@ export default class App extends Component {
         </header>
 
             <div className= "drop-down">
-
+              Type
               <Dropdown 
                   options={keywordOptions}
                   handleSelection={this.handleCreatureSelection}
               />
-
+              Number of Horns
               <Dropdown 
                   options={hornOptions}
                   handleSelection={this.handleHornSelection}
