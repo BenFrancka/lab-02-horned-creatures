@@ -27,13 +27,14 @@ export default class App extends Component {
 
     let filteredCreatures = creatures;
   
-    
+    //filters by keyword, compares selection with state
     if (this.state.filterKeyword) {
-      filteredCreatures = creatures.filter(creature => creature.keyword === this.state.filterKeyword)
+      filteredCreatures = filteredCreatures.filter(creature => creature.keyword === this.state.filterKeyword)
     }
 
-    if (this.state.filterHorns) {
-         filteredCreatures = creatures.filter(creature => creature.horns === +this.state.filterHorns)
+    //filters by horns, compares selection with state
+     if (this.state.filterHorns) {
+         filteredCreatures = filteredCreatures.filter(creature => creature.horns === +this.state.filterHorns)
     }
     
     //makes array of keywords for dropdown props
