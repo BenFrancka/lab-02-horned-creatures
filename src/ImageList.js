@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import ImageItem from './ImageItem.js';
+import ImageItem from './ImageItem';
 
 export default class ImageList extends Component {
     render() {
-        console.log(this.props.list);
         return (
             <div className= "creature-display">
                 {this.props.list.map(item => 
