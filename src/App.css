@@ -23,11 +23,12 @@ header {
 
 .creature-section {
   font-size: 1.5rem;
-  margin: 10%;
+  margin: 5%;
 }
 
 .creature-box {
-  background-color: khaki;
+  width: auto;
+  background-color: rgba(240, 230, 140, 0.521);
   border: solid black 2px;
   border-radius: 25%;
   margin: 2%;
