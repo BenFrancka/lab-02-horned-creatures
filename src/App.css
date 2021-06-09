@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-color:darksalmon;
+  font-family: 'Indie Flower', cursive;
 }
 
 select {
@@ -13,6 +15,9 @@ select {
 
 header {
   font-size: 3rem;
+  background-color: burlywood;
+  border: solid;
+  margin-bottom: 5%;
 }
 
 .creature-section {
@@ -23,10 +28,12 @@ header {
 .creature-box {
   background-color: azure;
   border: solid black 2px;
+  border-radius: 25%;
 }
 
 .drop-down {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  background-color: khaki;
 }
 
 

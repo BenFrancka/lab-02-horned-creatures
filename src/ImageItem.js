@@ -20,8 +20,4 @@ export default class ImageItem extends Component {
         )
     }
 }
-                    /*url= {item.url}
-                    title= {item.title}
-                    keyword= {item.title}
-                    description= {item.description}
-                    horns={item.horns}*/
+                   
