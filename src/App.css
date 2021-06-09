@@ -29,6 +29,7 @@ header {
   background-color: khaki;
   border: solid black 2px;
   border-radius: 25%;
+  margin: 2%;
 }
 
 .drop-down {
